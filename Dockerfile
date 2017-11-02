@@ -12,6 +12,7 @@ RUN apt-get update \
         libpq-dev \
         libzip-dev \
         libicu-dev \
+        libpng-dev \
         libpng12-dev \
         libjpeg62-turbo-dev \
         libfreetype6-dev \
@@ -27,7 +28,14 @@ RUN apt-get update \
         pdo_mysql \
         pgsql \
         sockets \
+        soap \
         zip \
+        gd \
+    && docker-php-ext-configure gd \
+        --enable-gd-native-ttf \
+        --with-jpeg-dir=/usr/lib \
+        --with-freetype-dir=/usr/include/freetype2 \
+    && docker-php-ext-install gd \
     && pecl install xdebug \
         && echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini \
         && echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/xdebug.ini \

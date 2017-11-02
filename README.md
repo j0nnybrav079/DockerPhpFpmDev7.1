@@ -3,6 +3,7 @@
 This image offers the php 7.2-fpm-image including a bunch of helpful tools:
 - curl 
 - git 
+- gd
 - unzip 
 - libpq-dev 
 - libzip-dev 
@@ -24,3 +25,9 @@ This image offers the php 7.2-fpm-image including a bunch of helpful tools:
 - xdebug 
 - apcu 
 - composer
+
+Build information:
+```bash
+    $:docker build -t  dacoco/php_7-1_fpm_dev .
+    $:docker push dacoco/php_7-1_fpm_dev
+```  
