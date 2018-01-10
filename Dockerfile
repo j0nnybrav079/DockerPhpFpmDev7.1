@@ -26,6 +26,7 @@ RUN apt-get update \
         pdo \
         pdo_pgsql \
         pdo_mysql \
+        mysqli \
         pgsql \
         sockets \
         soap \
