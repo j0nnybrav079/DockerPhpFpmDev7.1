@@ -1,30 +1,26 @@
 # DockerPhpFpmDev7.1
 
-This image offers the php 7.2-fpm-image including a bunch of helpful tools:
-- curl 
-- git 
-- gd
-- unzip 
-- libpq-dev 
-- libzip-dev 
-- libicu-dev 
-- libpng12-dev 
-- libjpeg62-turbo-dev 
-- libfreetype6-dev 
-- libmagickwand-6.q16-dev 
+This image offers the php 7.1-fpm-image including a bunch of helpful tools:
+- apcu 
 - bcmath 
+- composer
+- curl 
+- gd
+- git 
+- gd 
 - intl 
 - json 
+- mysqli 
 - opcache 
 - pdo 
 - pdo_pgsql 
 - pdo_mysql 
 - pgsql 
+- soap
 - sockets 
-- zip 
+- unzip 
 - xdebug 
-- apcu 
-- composer
+- zip 
 
 Build information:
 ```bash
