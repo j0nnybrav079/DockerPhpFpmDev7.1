@@ -1,26 +1,52 @@
 # DockerPhpFpmDev7.1
 
 This image offers the php 7.1-fpm-image including a bunch of helpful tools:
+- apc
 - apcu 
 - bcmath 
+- cgi-fcgi
 - composer
 - curl 
+- date
+- dom
+- fileinfo
+- filter
+- ftp
 - gd
 - git 
 - gd 
+- hash
+- iconv
+- imagick
 - intl 
 - json 
+- libxml
+- mbstring
 - mysqli 
-- opcache 
+- mysqlnd
+- opcache
+- openssl 
+- pcre
 - pdo 
 - pdo_pgsql 
 - pdo_mysql 
+- pdo_sqlite
 - pgsql 
+- phar
+- posix
+- readline
+- reflection
+- session
+- simpleXML
 - soap
-- sockets 
+- sockets
+- spl
+- sqlite3 
 - unzip 
+- xml
 - xdebug 
 - zip 
+- zlib
 
 Build information:
 ```bash
