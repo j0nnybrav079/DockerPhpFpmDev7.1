@@ -31,6 +31,7 @@ This image offers the php 7.1-fpm-image including a bunch of helpful tools:
 - pdo_pgsql 
 - pdo_mysql 
 - pdo_sqlite
+- pdo-sqlsrc (odbc 13)
 - pgsql 
 - phar
 - posix
@@ -48,8 +49,13 @@ This image offers the php 7.1-fpm-image including a bunch of helpful tools:
 - zip 
 - zlib
 
-Build information:
+# Build information:
 ```bash
     $:docker build -t  dacoco/php_7-1_fpm_dev .
     $:docker push dacoco/php_7-1_fpm_dev
+```  
+
+# MSSQL in php:
+```bash
+    $pdo = new PDO('sqlsrv:server=YOUR-IMAGE-NAME;', 'USER', 'PASSWORD');
 ```  
